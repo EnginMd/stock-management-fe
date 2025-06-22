@@ -3,7 +3,7 @@
 
         http://localhost:5229/products/low-stock
 -   Dönen ürünlerin stock miktarları roma rakamlarına çevrilerek ekrana yazdırılır.
-- Algoritma aşağıdaki tablo baz alınarak kurgulanmıştır. Sayı bu tablodaki 1. elemandan başlanarak kontrol edilir. Eğer ona eşit veya büyükse sembolü yazılır ve sayıdan sembolün değeri çıkarılır. Sayı halen bu değerden büyükse sembol tekrar eklenir ve sayı tekrar eksiltilir. Sayı sembolün değerinden küçük olana kadar bu devam eder. Sayı küçüldükten sonra sonraki sembolün değeri ile aynı kontrol ve işlemler yapılarak devam edilir. İlgii toRoman JavaScript fonksiyonu yukarıda repoda, App.jsx dosyasındadır.
+- Algoritma aşağıdaki tablo baz alınarak kurgulanmıştır. Sayı bu tablodaki 1. elemandan başlanarak kontrol edilir. Eğer ona eşit veya büyükse sembolü yazılır ve sayıdan sembolün değeri çıkarılır. Sayı halen bu değerden büyükse sembol tekrar eklenir ve sayı tekrar eksiltilir. Sayı sembolün değerinden küçük olana kadar bu devam eder. Sayı küçüldükten sonra sonraki sembolün değeri ile aynı kontrol ve işlemler yapılarak devam edilir. İlgili toRoman JavaScript fonksiyonu repoda, App.jsx dosyasındadır.
 
   ```javascript
     const romanMap = [
