@@ -1,12 +1,24 @@
-# React + Vite
+# Proje İçeriği
+- Aşağıdaki stok seviyesi düşen ürünleri dönen API'den Axios kütüphanesi ile veri çekilir. Projede React kullanılmıştır.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+        http://localhost:5229/products/low-stock
+-   Dönen ürünlerin stock miktarları roma rakamlarına çevrilerek ekrana yazdırılır.
+- Algoritma aşağıdaki tablo baz alınarak kurgulanmıştır. Sayı bu tablodaki 1. elemandan başlanarak kontrol edilir. Eğer ona eşit veya büyükse sembolü yazılır ve sayıdan sembolün değeri çıkarılır. Sayı halen bu değerden büyükse sembol tekrar eklenir ve sayı tekrar eksiltilir. Sayı sembolün değerinden küçük olana kadar bu devam eder. Sayı küçüldükten sonra sonraki sembolün değeri ile aynı kontrol ve işlemler yapılarak devam edilir. İlgii toRoman JavaScript fonksiyonu yukarıda repoda, App.jsx dosyasındadır.
 
-Currently, two official plugins are available:
+  ```javascript
+    const romanMap = [
+            { value: 1000, symbol: 'M' },
+            { value: 900, symbol: 'CM' },
+            { value: 500, symbol: 'D' },
+            { value: 400, symbol: 'CD' },
+            { value: 100, symbol: 'C' },
+            { value: 90, symbol: 'XC' },
+            { value: 50, symbol: 'L' },
+            { value: 40, symbol: 'XL' },
+            { value: 10, symbol: 'X' },
+            { value: 9, symbol: 'IX' },
+            { value: 5, symbol: 'V' },
+            { value: 4, symbol: 'IV' },
+            { value: 1, symbol: 'I' }
+    ];
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
