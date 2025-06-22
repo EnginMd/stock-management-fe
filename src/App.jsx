@@ -41,7 +41,7 @@ function App()
     useEffect(() => {
         const getData = async() =>
         {
-            const { data } = await axios.get('http://localhost:5229/products');
+            const { data } = await axios.get('http://localhost:5229/products/low-stock');
             setAllData(data);
         }
         getData();
